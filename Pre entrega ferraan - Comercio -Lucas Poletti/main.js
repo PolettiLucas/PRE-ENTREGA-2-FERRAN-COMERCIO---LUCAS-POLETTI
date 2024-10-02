@@ -4,10 +4,12 @@ console.log("Bienvenido repositor " + nombreRepositor);
 let productos = [];
 
 
-function Producto(nombre, precio, cantidad) {
+class Producto { 
+    constructor(nombre, precio, cantidad) { 
     this.nombre = nombre;       
     this.precio = precio;
-    this.cantidad = cantidad;    
+    this.cantidad = cantidad;   
+} 
 }
 
 
