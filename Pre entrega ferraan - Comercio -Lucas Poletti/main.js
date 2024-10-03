@@ -14,10 +14,13 @@ class Producto {
 
 
 function inicializarProductos() {
-    productos.push(new Producto("Manzana", 15, 10));
-    productos.push(new Producto("Pera", 20, 50));
-    productos.push(new Producto("Banana", 20, 25));
-    productos.push(new Producto("Uva", 20, 30));
+    const nombres = ["Manzana", "Pera", "Banana", "Uva"];
+    const precios = [15, 20, 20, 20];
+    const cantidades = [10, 50, 25, 30];
+
+    for (let i = 0; i < nombres.length; i++) {
+        productos.push(new Producto(nombres[i], precios[i], cantidades[i]));
+    }
 }
 
 
